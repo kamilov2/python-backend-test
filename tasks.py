@@ -119,3 +119,16 @@ else:
 
 #Task uyga vazifa
 #input orqali ism qabul qilsin va uni harfligiga tekshirsin va qoshayotganda bosh harfini katta qilib qoshsin list ga 5 ta ism qabul qilib qoshadi shu royhatdan tasodifiy 3 ta odamni ismini hammasini katta harfda print qilib ekranga chiqaradi
+
+
+#  webkit-border-top-radius >> webkitBorderTopRadius
+
+def generate_css_to_dom(text):
+    first_word = text.split('-')[0]
+    arr = []
+    for i in text.split('-')[1:]:
+        arr.append(i.title())
+    return first_word + "".join(arr)
+
+res = generate_css_to_dom("webkit-border-top-radius")
+print(res) # webkitBorderTopRadius

@@ -50,16 +50,19 @@
 
 # print(check_kwargs(a=1,b=2,c=3))
 
-def super_func(*args,**kwargs):
-    print(type(kwargs)) # <class 'dict'>
-    for i in kwargs.items():
-        print(i)
+# def super_func(*args,**kwargs):
+#     print(type(kwargs)) # <class 'dict'>
+#     for i in kwargs.items():
+#         print(i)
         
-    print(type(args)) # <class 'tuple'>
-    for i in args:
-        print(i)
+#     print(type(args)) # <class 'tuple'>
+#     for i in args:
+#         print(i)
 
-super_func(1,2,3,a=4,b=5)
+# super_func(1,2,3,a=4,b=5)
 
 # args = arguments 
 # kwargs = keyword arguments 
+
+
+# lambda - bir qatorli , nomsiz funksiya , 1 yoki 2 ta amalni bajarish uchun qollaniladi 
