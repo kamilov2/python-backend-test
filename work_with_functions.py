@@ -113,33 +113,42 @@
 
 # filter - korsatilgan funksiyadagi shart boyicha ketma-ketlik elementlari filterlaydi 
 
-nums = [1,4,5,9,78,6,2,1,5,4,8,9,3]
-print(list(filter(lambda x: x > 5, nums))) # [9, 78, 6, 8, 9]
+# nums = [1,4,5,9,78,6,2,1,5,4,8,9,3]
+# print(list(filter(lambda x: x > 5, nums))) # [9, 78, 6, 8, 9]
 
-words = ["python","javascript","ruby","go"]
-print(tuple(filter(lambda word : "o" in word,words))) # ('python', 'go')
+# words = ["python","javascript","ruby","go"]
+# print(tuple(filter(lambda word : "o" in word,words))) # ('python', 'go')
 
-students = [
-    {
-        "name":"Bob",
-        "point":7
-    },
-        {
-        "name":"Sara",
-        "point":8
-    },
-        {
-        "name":"Mike",
-        "point":3
-    },
-        {
-        "name":"David",
-        "point":9
-    },
-        {
-        "name":"Miguel",
-        "point":4
-    },
-]
+# students = [
+#     {
+#         "name":"Bob",
+#         "point":7
+#     },
+#         {
+#         "name":"Sara",
+#         "point":8
+#     },
+#         {
+#         "name":"Mike",
+#         "point":3
+#     },
+#         {
+#         "name":"David",
+#         "point":9
+#     },
+#         {
+#         "name":"Miguel",
+#         "point":4
+#     },
+# ]
 
 # Ushbu malumotlarni filterlab o'quvchilar orasida faqat 5 balldan yuqori olganlarni chiqaring
+# new_st = []
+# for student in students:
+#     if student.get("point") > 5:
+#         new_st.append(student)
+
+# print(new_st)
+
+# print(list(filter(lambda student:student.get("point") > 5, students)))
+

@@ -123,12 +123,55 @@ else:
 
 #  webkit-border-top-radius >> webkitBorderTopRadius
 
-def generate_css_to_dom(text):
-    first_word = text.split('-')[0]
-    arr = []
-    for i in text.split('-')[1:]:
-        arr.append(i.title())
-    return first_word + "".join(arr)
+# def generate_css_to_dom(text):
+#     first_word = text.split('-')[0]
+#     arr = []
+#     for i in text.split('-')[1:]:
+#         arr.append(i.title())
+#     return first_word + "".join(arr)
 
-res = generate_css_to_dom("webkit-border-top-radius")
-print(res) # webkitBorderTopRadius
+# res = generate_css_to_dom("webkit-border-top-radius")
+# print(res) # webkitBorderTopRadius
+
+
+# task 
+# arr = ["abc",1,True,0,None,[1,2,3],(0,1), "tata", "go"]
+
+# massivda berilgan qiymatlarni tekshiring va ular agar string bo'lsa ularni alohida massivga filterlang
+# for i in arr:
+#     if type(i) == str:
+#         print(i) # abc tata go 
+
+# print(list(filter(lambda x: type(x) == str, arr))) # ['abc', 'tata', 'go']
+
+# nums = [1.2,5,0.3,7,1,1.53,8]
+# ushbu massivdagi butun sonlarni alohida int_nums massiviga qoldiqli sonlarni alohida float_nums massiviga filterlang
+# output:
+# int_nums = [5,7,1,9]
+# float_nums = [1.2,0.3,1.53]
+# print(list(filter(lambda x: type(x) == int, nums)))
+# print(list(filter(lambda x: type(x) == float, nums)))
+
+# task
+# userdan text qabul qiling va har bir unli harfdan so'ng shu unli harfdan 1 ta qoshib textni ozgartrib qaytaring
+# input : salom
+# output: saaloom
+
+text = "salom"
+result = []
+for i in text:
+    if i in "aiuoe":
+        result.append(i + i)
+    else:
+        result.append(i)
+
+print("".join(result)) # saaloom
+print("".join([i + i if i in "aiuoe" else i for i in text])) # saaloom
+
+print()
+
+
+
+
+
+
