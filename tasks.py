@@ -157,21 +157,31 @@ else:
 # input : salom
 # output: saaloom
 
-text = "salom"
-result = []
-for i in text:
-    if i in "aiuoe":
-        result.append(i + i)
-    else:
-        result.append(i)
+# text = "salom"
+# result = []
+# for i in text:
+#     if i in "aiuoe":
+#         result.append(i + i)
+#     else:
+#         result.append(i)
+# 00
+# print("".join(result)) # saaloom
+# print("".join([i + i if i in "aiuoe" else i for i in text])) # saaloom
 
-print("".join(result)) # saaloom
-print("".join([i + i if i in "aiuoe" else i for i in text])) # saaloom
+# print()
 
-print()
+def pow_x(num):
+    return num ** 2
+arr = [11,20,5,4,7,8,96,4,32,1,5,8]
+print(list(filter(lambda x: x > 10, arr)))
+# print(tuple(filter(lambda x: x > 10, arr)))
 
+print(list(map(pow_x,[1,2,3,4,5]))) # [1, 4, 9, 16, 25]
 
+a = "abc"
+l = [1,2,3,4,5]
 
+print(list(zip(a,l)))
 
 
 
