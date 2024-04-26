@@ -12,6 +12,9 @@ import os
 # task 
 
 # my_dir nomli papka ichiga 3 ta test_1.txt , test_2.txt va test_3.txt fayllarini hosil qiling
+for i in range(1,4):
+    with open(f"my_dir/test_{i}.txt", "w") as file:
+        pass
 
 
 # dir_list = os.listdir('./') # korsatilgan papkani ichidagi narsalarni korish list qilib
