@@ -160,3 +160,70 @@ import time
 # years = d[0].split("-")[0] # YYYY
 # hours = d[1].split(":")[0] # HH
 # print(years, hours)
+
+# task 
+# ls = ["python","javascript","cpp","ruby","fortran","assambler"]
+
+# def filter_words(arr):
+#     result = []
+#     for i in arr:
+#         if len(i) > 5:
+#             result.append(i)
+#     return result
+
+# print(filter_words(ls))
+
+# print(list(filter(lambda word:len(word) > 5, ls)))
+
+
+# task
+# print(input()[::-1])
+
+# s = list(input())
+# s.reverse()
+# print("".join(s))
+
+# task 
+# arr1 = [1,5,4,6,8,7,2,3,1,4,6,9,8]
+# arr2 = [5,1,3,6,4,7,9,5,4,1,3,6,5]
+
+# def get_similar_objects(ls1,ls2):
+#     result = []
+#     for i in ls1:
+#         for k in ls2:
+#             if i == k:
+#                 result.append(i)
+#     return list(set(result))
+
+# print(get_similar_objects(arr1,arr2))
+
+# print(list(set([i for i in arr1 if i in arr2])))
+
+# # task 
+# input : 52130
+# output : [0,3,1,2,5]
+
+# print(list(input()[::-1]))
+# res = []
+# n = input()
+# if len(n) >= 5:
+#     for i in n: 
+#         res.append(i)
+# else:
+#     print("5 xona emas")
+
+# res.reverse()
+# print(res)
+
+client = {
+    "name":"John",
+    "age":0,
+    "status":""
+}
+age = int(input())
+
+# client = {
+#     "name":"John",
+#     "age":23,
+#     "status":"Voyaga yetgan"
+# }
