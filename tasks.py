@@ -215,12 +215,13 @@ import time
 # res.reverse()
 # print(res)
 
-client = {
-    "name":"John",
-    "age":0,
-    "status":""
-}
-age = int(input())
+# client = {
+#     "name":"John",
+#     "age":0,
+#     "status":""
+# }
+# client["age"] = 10
+# age = int(input())
 
 # client = {
 #     "name":"John",
